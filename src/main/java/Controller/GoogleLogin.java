@@ -200,7 +200,7 @@ public class GoogleLogin extends HttpServlet {
 
             // Insert the document into the collection
             collection.insertOne(newUser);
-            return userId; // Return true if the user was created successfully
+            return userId; 
         } catch (Exception e) {
             e.printStackTrace();
             return null; // Return false if an error occurred
